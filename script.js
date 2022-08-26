@@ -58,7 +58,7 @@ tl.to(".anim", {
   scrollTrigger: {
     scroller: "#mainCtn",
     trigger: "#videoSec-1",
-    start: "top 60%",
+    start: "top 50%",
     end:"top 30%",
     // markers: true,
     scrub: 2
@@ -71,9 +71,9 @@ tl.to("#sLine", {
   scrollTrigger: {
     scroller: "#mainCtn",
     trigger: "#videoSec-1",
-    start: "top 60%",
+    start: "top 50%",
     end:"top 30%",
-    // markers: true,
+    markers: true,
     scrub: 2
   },
   opacity:0,
@@ -108,6 +108,29 @@ function animationkaro(){
 
 
 
+  // gsap.set(".anim span", {y: "200%"})
+
+  //       document.querySelectorAll(".anim")
+  //       .forEach(function(elem){
+  //           gsap.from(elem, {
+  //               scrollTrigger: {
+  //                   scroller: "#mainCtn",
+  //                   trigger: elem,
+  //                   start: "top 60%"
+  //               },
+  //               onStart: function(){
+  //                   gsap.to(elem.children[0].children, {
+  //                       y: 0,
+  //                       ease: Power4,
+  //                       duration: .3,
+  //                       stagger: .2
+  //                   })
+  //               }
+  //           })
+  //       })
+
+
+
   // document.querySelectorAll(".anim").forEach(
   //   function(dets[i]){
   //     gsap.from(dets[i]))
@@ -131,7 +154,7 @@ function animationkaro(){
       //       scroller: "#mainCtn",
       //       trigger : ".textwrapper span",
       //       start: "top 60%",
-      //       markers: true
+      //       // markers: true
   
       //     }})
      
@@ -142,7 +165,24 @@ function animationkaro(){
   })
 }
 
-animationkaro();
+// animationkaro();
+
+
+function textillateActivation(){
+  gsap.from(".textAnim",{
+    scrollTrigger: {
+      scroller: "#mainCtn",
+      trigger: ".textAnim",
+      start: "top 50%",
+      // markers: true
+    },
+    onStart:function(){
+      $('.textAnim').textillate({ in: { effect: 'fadeInUp' } });
+    }
+  })
+}
+
+textillateActivation();
 
 
 
@@ -231,7 +271,7 @@ function movingCircle1(){
   var circlets = document.querySelector("#movingCir1");
 
   ctnts.addEventListener("mouseenter", function(){
-circlets.style.display = "flex";
+circlets.style.opacity = 1;
   })
 
   
@@ -254,7 +294,7 @@ circlets.style.display = "flex";
     circlets.style.top = "50%";
     circlets.style.left = "50%";
     setTimeout(function(){
-      circlets.style.display = "none";
+      circlets.style.opacity = 0;
 
     }, 10)
 
@@ -272,7 +312,7 @@ function movingCircle2(){
   var circlet = document.querySelector("#movingCir2");
 
   ctnt.addEventListener("mouseenter", function(){
-circlet.style.display = "flex";
+circlet.style.opacity = 1;
   })
 
   
@@ -292,7 +332,7 @@ circlet.style.display = "flex";
     circlet.style.top = "50%";
     circlet.style.left = "50%";
     setTimeout(function(){
-      circlet.style.display = "none";
+      circlet.style.opacity = 0;
 
     }, 10)
 
@@ -309,7 +349,7 @@ var sliderCtn = document.querySelector("#slider");
 var movRing = document.querySelector("#movingRing");
 
   sliderCtn.addEventListener("mouseenter", function(){
-    movRing.style.display = "flex";
+    movRing.style.opacity = 1;
   })
 
   
@@ -332,7 +372,7 @@ var movRing = document.querySelector("#movingRing");
     movRing.style.top = "50%";
     movRing.style.left = "50%";
     // setTimeout(function(){
-      movRing.style.display = "none";
+      movRing.style.opacity = 0;
 
     // }, 100)
 

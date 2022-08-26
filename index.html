@@ -9,37 +9,40 @@
     <link rel="shortcut icon" href="Assets/Images/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- main-container -->
     <div id="mainCtn">
-        <nav id="nav" data-scroll data-scroll-sticky data-scroll-target = "#mainCtn">
-            <img src="Assets/Images/logo.png"
-                alt="">
+        <!-- navigation-bar -->
+        <nav id="nav" data-scroll data-scroll-sticky data-scroll-target="#mainCtn">
+            <img src="Assets/Images/logo.png" alt="">
             <div id="rightNav">
-                <button>Get in touch</button>
-
-                <img onmouseover="changeToGreen()" onmouseout="changeToWhite()" src="Assets/Images/dot_icon_1.png" alt=""
-                    class="menu">
+                <div id="btn">
+                    <div id="btnShutter"></div>
+                    <h6 id="btnC">Get in touch</h6>
+                </div>
+                <img onmouseover="changeToGreen()" onmouseout="changeToWhite()" src="Assets/Images/dot_icon_1.png"
+                    alt="" class="menu">
             </div>
         </nav>
         <!-- header-section -->
-        <div data-scroll data-scroll-sticky data-scroll-target = "#mainCtn" id="headerSec">
+        <div data-scroll data-scroll-sticky data-scroll-target="#mainCtn" id="headerSec">
             <div id="mainH">
-                 <h1 class="anim">Digital</h1>
-                 <div id="mainHMidH">
-                     <h1 class="anim">experiences</h1>
-                     <div id="sLineCtn">
-                     <div id="sLine"></div>
-                     </div>
-                     <h1 class="anim">that</h1>
-                 </div>
-             <div id="mainHLCtn">
-                <h1 id="mainHL" class="anim">Win by Design</h1>
-                <h1 id="sup1" class="anim">TM</h1>
-             </div>
+                <h1 class="anim">Digital</h1>
+                <div id="mainHMidH">
+                    <h1 class="anim">experiences</h1>
+                    <div id="sLineCtn">
+                        <div id="sLine"></div>
+                    </div>
+                    <h1 class="anim midLas">that</h1>
+                </div>
+                <div id="mainHLCtn">
+                    <h1 id="mainHL" class="anim">Win by Design</h1>
+                    <h1 id="sup1" class="anim">TM</h1>
+                </div>
             </div>
             <h2 id="sideH">CHECK OUT THE HYPE <i class="ri-arrow-down-line"></i></h2>
         </div>
@@ -52,7 +55,7 @@
             </div>
             <!-- section-1 -->
             <div id="sec-1">
-                <h1>RocketAir is a design and strategy <br> company with an adaptive approach <br> to problem solving.
+                <h1 class="textAnim">RocketAir is a design and strategy <br> company with an adaptive approach <br> to problem solving.
                 </h1>
             </div>
             <!-- section-2 -->
@@ -61,7 +64,7 @@
                     <h1>We call it</h1>
                     <div id="tSLine"></div>
                 </div>
-                <h1 id="orbital">ORBITAL</h1>
+                <h1 id="orbital" class="textAnim">ORBITAL</h1>
                 <div id="bH">
 
                     <h1 id="orbital2">DESIGN</h1>
@@ -69,7 +72,7 @@
                 </div>
             </div>
             <!-- video-section-2 -->
-            <div id="videoSec-2">
+            <div class="videoSec-2">
                 <video src="Assets/Videos/clip_2.mp4" autoplay loop muted></video>
             </div>
             <!-- section-3 -->
@@ -176,45 +179,42 @@
             <div id="sec-5">
                 <h1>WORK</h1>
                 <div id="box1" class="box">
-                <div id="movingCir2"></div>
+                    <div id="movingCir2"></div>
 
                     <div class="sBox">
-                        <img src="Assets/Images/sec _5_pic_1.jpg"
-                            alt="">
+                        <img src="Assets/Images/sec _5_pic_1.jpg" alt="">
                     </div>
                     <h4>Olive</h4>
                     <p>
                         MAKING ONLINE SHOPING A MORE SUSTAINABLE ENVIRONMENT
                     </p>
-    
+
                 </div>
                 <div id="box2" class="box">
-                <div class="movingCir2"></div>
+                    <div class="movingCir2"></div>
 
-                    
+
                     <div class="sBox">
-                        <img src="Assets/Images/sec _5_pic_2.jpg"
-                            alt="">
+                        <img src="Assets/Images/sec _5_pic_2.jpg" alt="">
                     </div>
                     <h4>Stryx</h4>
                     <p>
                         MAKING ONLINE SHOPING A MORE SUSTAINABLE ENVIRONMENT
                     </p>
-    
+
                 </div>
                 <div id="box3" class="box">
-                <div class="movingCir2"></div>
+                    <div class="movingCir2"></div>
 
                     <div class="sBox">
-                        <img src="Assets/Images/sec _5_pic_3.jpg"
-                            alt="">
+                        <img src="Assets/Images/sec _5_pic_3.jpg" alt="">
                     </div>
                     <h4>Focus Vision</h4>
                     <p>
                         MAKING ONLINE SHOPING A MORE SUSTAINABLE ENVIRONMENT
                     </p>
-    
-                </div> 
+
+                </div>
             </div>
             <!-- section-6 -->
             <div id="sec-6">
@@ -282,31 +282,40 @@
 
                     </div>
                     <div id="b9">
-                    <div>
-                        <div class="sHandels">
-                            <div class="sHTile"></div>
-                            <i class="ri-twitter-fill"></i>
+                        <div>
+                            <div class="sHandels">
+                                <div class="sHTile"></div>
+                                <i class="ri-twitter-fill"></i>
+                            </div>
+                            <div class="sHandels">
+                                <div class="sHTile"></div>
+                                <i class="ri-linkedin-fill"></i>
+                            </div>
+                            <div class="sHandels">
+                                <div class="sHTile"></div>
+                                <i class="ri-youtube-fill"></i>
+                            </div>
+                            <div class="sHandels">
+                                <div class="sHTile"></div>
+                                <i class="ri-instagram-fill"></i>
+                            </div>
                         </div>
-                        <div class="sHandels">
-                            <div class="sHTile"></div>
-                            <i class="ri-linkedin-fill"></i></div>
-                        <div class="sHandels">
-                            <div class="sHTile"></div>
-                            <i class="ri-youtube-fill"></i></div>
-                        <div class="sHandels">
-                            <div class="sHTile"></div>
-                            <i class="ri-instagram-fill"></i></div>
+                        <h4>Made with <i class="ri-heart-3-fill"></i> at Sheryians Coding School</h4>
                     </div>
-                    <h4>Privacy Policy</h4>
-                </div>
-
                 </div>
             </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" integrity="sha512-GQ5/eIhs41UXpG6fGo4xQBpwSEj9RrBvMuKyE2h/2vw3a9x85T1Bt0JglOUVJJLeyIUl/S/kCdDXlE/n7zCjIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js" integrity="sha512-6BvDODEWgjWWyBrg6YFio6xmzgKWpf54tDlnCtG05m++/jgh/7jQcx6jUJrq44lB84cf68FzYiT0LipabA5g8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"
+        integrity="sha512-GQ5/eIhs41UXpG6fGo4xQBpwSEj9RrBvMuKyE2h/2vw3a9x85T1Bt0JglOUVJJLeyIUl/S/kCdDXlE/n7zCjIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"
+        integrity="sha512-6BvDODEWgjWWyBrg6YFio6xmzgKWpf54tDlnCtG05m++/jgh/7jQcx6jUJrq44lB84cf68FzYiT0LipabA5g8g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js" integrity="sha512-VJ/iYbiu1eJ6yLimfTi65t2R9TFcG5D9X8ZCfbbEFhTfPnKJh8byoKXEawi5ScJZBYL1eiirL1+MczZDx0Tz9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js" integrity="sha512-0bHMhYsdpiur1bT84kDH4D7cpxFQ9O7uA5yxVAqWC87h552Xt0swX4M+ZlXMKE8oPVRIJ5lAwXWO2UWeDwJJOw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
 
