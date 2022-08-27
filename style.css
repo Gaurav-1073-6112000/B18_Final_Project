@@ -550,7 +550,7 @@ nav img {
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     color: black;
     background-color: white;
 }

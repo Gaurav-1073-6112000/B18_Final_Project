@@ -73,7 +73,7 @@ tl.to("#sLine", {
     trigger: "#videoSec-1",
     start: "top 50%",
     end:"top 30%",
-    markers: true,
+    // markers: true,
     scrub: 2
   },
   opacity:0,
@@ -242,7 +242,7 @@ function boxbhagao(){
       // start: "top 60%",
       // end:"top 30%",
       // markers: true,
-      scrub:5,
+      scrub:2
     },
     top: "-150%",
     ease: Expo.esaeInOut,
