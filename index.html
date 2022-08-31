@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="Assets/Images/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"> -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -31,17 +31,17 @@
         <!-- header-section -->
         <div data-scroll data-scroll-sticky data-scroll-target="#mainCtn" id="headerSec">
             <div id="mainH">
-                <h1 class="anim">Digital</h1>
+                <h1 class="anim mainHeadAnim">Digital</h1>
                 <div id="mainHMidH">
-                    <h1 class="anim">experiences</h1>
+                    <h1 class="anim mainHeadAnim">experiences</h1>
                     <div id="sLineCtn">
                         <div id="sLine"></div>
                     </div>
-                    <h1 class="anim midLas">that</h1>
+                    <h1 class="anim midLas mainHeadAnim">that</h1>
                 </div>
                 <div id="mainHLCtn">
-                    <h1 id="mainHL" class="anim">Win by Design</h1>
-                    <h1 id="sup1" class="anim">TM</h1>
+                    <h1 id="mainHL" class="anim mainHeadAnim">Win by Design</h1>
+                    <h1 id="sup1" class="anim mainHeadAnim">TM</h1>
                 </div>
             </div>
             <h2 id="sideH">CHECK OUT THE HYPE <i class="ri-arrow-down-line"></i></h2>
@@ -50,25 +50,25 @@
         <div id="mainSec">
             <!-- video-section-1 -->
             <div id="videoSec-1">
-                <div id="movingCir1"></div>
+                <div id="movingCir1">Play</div>
                 <video src="Assets/Videos/clip_1.mp4" autoplay muted loop></video>
             </div>
             <!-- section-1 -->
             <div id="sec-1">
-                <h1 class="textAnim">RocketAir is a design and strategy <br> company with an adaptive approach <br> to
-                    problem solving.
-                </h1>
+                <h1 class="anim">RocketAir is a design and strategy</h1>
+                <h1 class="anim">company with an adaptive approach</h1>
+                <h1 class="anim">to problem solving.</h1>
             </div>
             <!-- section-2 -->
             <div id="sec-2">
                 <div id="tmiddle">
-                    <h1>We call it</h1>
+                    <h1 class="anim">We call it</h1>
                     <div id="tSLine"></div>
                 </div>
-                <h1 id="orbital" class="textAnim">ORBITAL</h1>
+                <h1 id="orbital" class="anim">ORBITAL</h1>
                 <div id="bH">
 
-                    <h1 id="orbital2">DESIGN</h1>
+                    <h1 id="orbital2"  class="anim">DESIGN</h1>
                     <button>Get to know us</button>
                 </div>
             </div>
@@ -126,10 +126,11 @@
             </div>
             <!-- section-4 -->
             <div id="sec-4">
-                <h1>We partner with <br>
-                    forward-thinking <br>
-                    enterprises and startups.
-                </h1>
+                <div>
+                    <h1 class="anim">We partner with</h1>
+                    <h1 class="anim">forward-thinking</h1>
+                    <h1 class="anim">enterprises and startups.</h1>
+                </div>
 
                 <div id="slider">
                     <div id="movingRing"></div>
@@ -178,7 +179,7 @@
             </div>
             <!-- section-5 -->
             <div id="sec-5">
-                <h1>WORK</h1>
+                <h1 class="anim">WORK</h1>
                 <div id="box1" class="box">
                     <div id="movingCir2"></div>
 
@@ -220,13 +221,15 @@
             <!-- section-6 -->
             <div id="sec-6">
                 <div id="epmainH">
-                    <h1>Take a look</h1>
+                    <h1 class="anim">Take a look</h1>
                     <div id="epmainHMidH">
-                        <h1>at what</h1>
+                        <h1 class="anim">at what</h1>
                         <div id="epsLine"></div>
-                        <h1>we can</h1>
+                        <h1 class="anim">we can</h1>
                     </div>
-                    <h1 id="epmainHL">do for you</h1>
+                    <div id="epmainHB">
+                        <h1 id="epmainHL" class="anim">do for you</h1>
+                    </div>
                 </div>
 
                 <div id="epCircle">All Work
@@ -235,7 +238,7 @@
             <!-- section-7 -->
             <div id="sec-7">
                 <div id="leftP">
-                    <h1>Fuel for thought</h1>
+                    <h1 >Fuel for thought</h1>
                     <p>A casual hello from the RocketAir Crew filled with insights, <br>inspiration, and good vibes
                         only.
                     </p>
@@ -314,14 +317,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"
         integrity="sha512-6BvDODEWgjWWyBrg6YFio6xmzgKWpf54tDlnCtG05m++/jgh/7jQcx6jUJrq44lB84cf68FzYiT0LipabA5g8g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"
         integrity="sha512-VJ/iYbiu1eJ6yLimfTi65t2R9TFcG5D9X8ZCfbbEFhTfPnKJh8byoKXEawi5ScJZBYL1eiirL1+MczZDx0Tz9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"
         integrity="sha512-0bHMhYsdpiur1bT84kDH4D7cpxFQ9O7uA5yxVAqWC87h552Xt0swX4M+ZlXMKE8oPVRIJ5lAwXWO2UWeDwJJOw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script src="script.js"></script>
 </body>
 

@@ -18,7 +18,7 @@
     padding: 0%;
     box-sizing: border-box;
     font-family: AeonikPro-Regular;
-    user-select: none;
+    /* user-select: none; */
 }
 
 html,
@@ -155,7 +155,7 @@ nav img {
 }
 
 .textwrapper span {
-    margin-left: 1.2vw;
+    margin-left: 10px;
     display: inline-block;
 }
 
@@ -165,6 +165,9 @@ nav img {
 
 .textwrapper {
     overflow: hidden;
+    width: fit-content;
+
+    /* background-color: #dbff00; */
 }
 
 #sideH {
@@ -229,7 +232,9 @@ nav img {
 
 #sec-1 {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
     color: white;
     height: 100vh;
     width: 100%;
@@ -249,6 +254,7 @@ nav img {
     width: 100%;
     background-color: black;
     padding: 0vh 3.2vw;
+    position: relative;
 }
 
 #tmiddle {
@@ -472,8 +478,12 @@ nav img {
     background-color: white;
 }
 
-#sec-4 h1 {
+#sec-4 h1:nth-child(1){
     margin-top: 25vh;
+}
+
+
+#sec-4 h1 {
     padding: 0vh 3.2vw;
     font-weight: 500;
     font-size: 4vw;
@@ -676,6 +686,11 @@ nav img {
 
 }
 
+#epmainHB{
+    display: flex;
+    justify-content: flex-end;
+}
+
 /* section-7 */
 
 #sec-7 {
@@ -683,6 +698,7 @@ nav img {
     min-height: 100vh;
     width: 100%;
     background-color: black;
+    border-top: 1px solid rgba(199, 199, 199, 0.5);
     display: flex;
 }
 
@@ -933,6 +949,14 @@ nav img {
         font-weight: 500;
     }
 
+    #sec-1 h1 .textwrapper span{
+        margin-left: 1.5vw;
+    }
+
+    #sec-1 h1 .textwrapper span:nth-child(1){
+        margin-left: 0;
+    }
+
     /* section-2 */
 
     #sec-2 {
@@ -942,6 +966,13 @@ nav img {
     #tmiddle h1 {
         font-size: 4vw;
         font-weight: 500;
+    }
+
+    #tmiddle h1 .textwrapper span{
+        margin-left: 0.9vw;
+    }
+    #tmiddle h1 .textwrapper span:nth-child(1){
+        margin-left: 0vw;
     }
 
     #tSLine {
@@ -1015,8 +1046,11 @@ nav img {
         height: 90vh;
     }
 
-    #sec-4 h1 {
+    #sec-4 h1:nth-child(1){
         margin-top: 20vh;
+    }
+    #sec-4 h1 {
+        margin-top: 0vh;
         font-size: 7vw;
     }
 
