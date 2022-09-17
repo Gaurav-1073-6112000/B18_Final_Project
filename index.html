@@ -1,322 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RocketAir | Design + Strategy</title>
-    <link rel="shortcut icon" href="Assets/Images/favicon.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css">
+    <link
+      rel="shortcut icon"
+      href="Assets/Images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css"
+    />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"> -->
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <!-- main-container -->
     <div id="mainCtn">
-        <!-- navigation-bar -->
-        <nav id="nav" data-scroll data-scroll-sticky data-scroll-target="#mainCtn">
-            <img src="Assets/Images/logo.png" alt="">
-            <div id="rightNav">
-                <div id="btn">
-                    <div id="btnShutter"></div>
-                    <h6 id="btnC">Get in touch</h6>
-                </div>
-                <img onmouseover="changeToGreen()" onmouseout="changeToWhite()" src="Assets/Images/dot_icon_1.png"
-                    alt="" class="menu">
-            </div>
-        </nav>
-        <!-- header-section -->
-        <div data-scroll data-scroll-sticky data-scroll-target="#mainCtn" id="headerSec">
-            <div id="mainH">
-                <h1 class="anim mainHeadAnim">Digital</h1>
-                <div id="mainHMidH">
-                    <h1 class="anim mainHeadAnim">experiences</h1>
-                    <div id="sLineCtn">
-                        <div id="sLine"></div>
-                    </div>
-                    <h1 class="anim midLas mainHeadAnim">that</h1>
-                </div>
-                <div id="mainHLCtn">
-                    <h1 id="mainHL" class="anim mainHeadAnim">Win by Design</h1>
-                    <h1 id="sup1" class="anim mainHeadAnim">TM</h1>
-                </div>
-            </div>
-            <h2 id="sideH">CHECK OUT THE HYPE <i class="ri-arrow-down-line"></i></h2>
+      <!-- navigation-bar -->
+      <nav
+        id="nav"
+        data-scroll
+        data-scroll-sticky
+        data-scroll-target="#mainCtn"
+      >
+        <img src="Assets/Images/logo.png" alt="" />
+        <div id="rightNav">
+          <div id="btn">
+            <div id="btnShutter"></div>
+            <h6 id="btnC">Get in touch</h6>
+          </div>
+          <img
+            onmouseover="changeToGreen()"
+            onmouseout="changeToWhite()"
+            src="Assets/Images/dot_icon_1.png"
+            alt=""
+            class="menu"
+          />
         </div>
-        <!-- main-section -->
-        <div id="mainSec">
-            <!-- video-section-1 -->
-            <div id="videoSec-1">
-                <div id="movingCir1">Play</div>
-                <video src="Assets/Videos/clip_1.mp4" autoplay muted loop></video>
+      </nav>
+      <!-- header-section -->
+      <div
+        data-scroll
+        data-scroll-sticky
+        data-scroll-target="#mainCtn"
+        id="headerSec"
+      >
+        <div id="mainH">
+          <h1 class="anim mainHeadAnim">Digital</h1>
+          <div id="mainHMidH">
+            <h1 class="anim mainHeadAnim">experiences</h1>
+            <div id="sLineCtn">
+              <div id="sLine"></div>
             </div>
-            <!-- section-1 -->
-            <div id="sec-1">
-                <h1 class="anim">RocketAir is a design and strategy</h1>
-                <h1 class="anim">company with an adaptive approach</h1>
-                <h1 class="anim">to problem solving.</h1>
-            </div>
-            <!-- section-2 -->
-            <div id="sec-2">
-                <div id="tmiddle">
-                    <h1 class="anim">We call it</h1>
-                    <div id="tSLine"></div>
-                </div>
-                <h1 id="orbital" class="anim">ORBITAL</h1>
-                <div id="bH">
-
-                    <h1 id="orbital2"  class="anim">DESIGN</h1>
-                    <button>Get to know us</button>
-                </div>
-            </div>
-            <!-- video-section-2 -->
-            <div class="videoSec-2">
-                <video src="Assets/Videos/clip_2.mp4" autoplay loop muted></video>
-            </div>
-            <!-- section-3 -->
-            <div id="sec-3">
-                <div class="slide sld" data-index="0">
-                    <div class="tile"></div>
-                    <div class="content">
-                        <h3>Brand</h3>
-                        <div class="arrow">
-                            <i class="ri-arrow-right-up-line darrow"></i>
-                            <i class="ri-arrow-right-line rarrow"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide sld" data-index="1">
-                    <div class="tile"></div>
-                    <div class="content">
-                        <h3>Brand</h3>
-                        <div class="arrow">
-                            <i class="ri-arrow-right-up-line darrow"></i>
-                            <i class="ri-arrow-right-line rarrow"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide sld" data-index="2">
-                    <div class="tile"></div>
-                    <div class="content">
-                        <h3>Brand</h3>
-                        <div class="arrow">
-                            <i class="ri-arrow-right-up-line darrow"></i>
-                            <i class="ri-arrow-right-line rarrow"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide" id="slide-4">
-                    <div id="CircularCtn">
-                        <img src="Assets/Images/circular_text.png" alt="">
-                        <div id="dot"></div>
-                    </div>
-                    <div id="opener0" class="videoOpener">
-                        <video src="Assets/Videos/clip_3.mp4" autoplay muted loop></video>
-                    </div>
-                    <div id="opener1" class="videoOpener">
-                        <video src="Assets/Videos/clip_4.mp4" autoplay muted loop></video>
-                    </div>
-                    <div id="opener2" class="videoOpener">
-                        <video src="Assets/Videos/clip_5.mp4" autoplay muted loop></video>
-                    </div>
-                </div>
-            </div>
-            <!-- section-4 -->
-            <div id="sec-4">
-                <div>
-                    <h1 class="anim">We partner with</h1>
-                    <h1 class="anim">forward-thinking</h1>
-                    <h1 class="anim">enterprises and startups.</h1>
-                </div>
-
-                <div id="slider">
-                    <div id="movingRing"></div>
-                    <div class="slides">
-                        <div>
-                            <img src="Assets/Images/partner_1.png" alt="">
-                        </div>
-                        <p>Helping a fintech leader redefine banking. We designed BlockFi web and mobile app, which lets
-                            users manage their crypto wallet, trade crypto, and borrow money against their holdings.</p>
-                    </div>
-                    <div class="slides">
-                        <div>
-                            <img src="Assets/Images/partner_2.png" alt="">
-                        </div>
-                        <p>Understanding what learners want. Using insights from user interviews, we helped the edtech
-                            startup Coursera evolve the UX of their MasterTrack® Certificate product to drive
-                            enrollment.
-                        </p>
-                    </div>
-                    <div class="slides">
-                        <div>
-                            <img src="Assets/Images/partner_3.jpg" alt="" id="partner_3">
-                        </div>
-                        <p>A trusted design partner for the premier VC in fintech. With strategy-led, systematic design,
-                            we
-                            help QED’s portfolio companies bring new brands and products to market.
-                        </p>
-                    </div>
-                    <div class="slides">
-                        <div>
-                            <img src="Assets/Images/partner_4.png" alt="">
-                        </div>
-                        <p>Bridging the gap for the connected enterprise. Using abstract 3D models, we created unique
-                            animation to show how Software AG helps businesses reach their digitally transformed future.
-                        </p>
-                    </div>
-                    <div class="slides">
-                        <div>
-                            <img src="Assets/Images/partner_5.png" alt="">
-                        </div>
-                        <p>Data-driven product design for one of the world's largest retailers. With usability testing,
-                            rapid prototyping, and cutting-edge UX tactics, we reshaped Walmart's e-commerce experience.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- section-5 -->
-            <div id="sec-5">
-                <h1 class="anim">WORK</h1>
-                <div id="box1" class="box">
-                    <div id="movingCir2"></div>
-
-                    <div class="sBox">
-                        <img src="Assets/Images/sec _5_pic_1.jpg" alt="">
-                    </div>
-                    <h4>Olive</h4>
-                    <p>
-                        MAKING ONLINE SHOPING A MORE SUSTAINABLE ENVIRONMENT
-                    </p>
-
-                </div>
-                <div id="box2" class="box">
-                    <div class="movingCir2"></div>
-
-
-                    <div class="sBox">
-                        <img src="Assets/Images/sec _5_pic_2.jpg" alt="">
-                    </div>
-                    <h4>Stryx</h4>
-                    <p>
-                        MAKING ONLINE SHOPING A MORE SUSTAINABLE ENVIRONMENT
-                    </p>
-
-                </div>
-                <div id="box3" class="box">
-                    <div class="movingCir2"></div>
-
-                    <div class="sBox">
-                        <img src="Assets/Images/sec _5_pic_3.jpg" alt="">
-                    </div>
-                    <h4>Focus Vision</h4>
-                    <p>
-                        MAKING ONLINE SHOPING A MORE SUSTAINABLE ENVIRONMENT
-                    </p>
-
-                </div>
-            </div>
-            <!-- section-6 -->
-            <div id="sec-6">
-                <div id="epmainH">
-                    <h1 class="anim">Take a look</h1>
-                    <div id="epmainHMidH">
-                        <h1 class="anim">at what</h1>
-                        <div id="epsLine"></div>
-                        <h1 class="anim">we can</h1>
-                    </div>
-                    <div id="epmainHB">
-                        <h1 id="epmainHL" class="anim">do for you</h1>
-                    </div>
-                </div>
-
-                <div id="epCircle">All Work
-                </div>
-            </div>
-            <!-- section-7 -->
-            <div id="sec-7">
-                <div id="leftP">
-                    <h1 >Fuel for thought</h1>
-                    <p>A casual hello from the RocketAir Crew filled with insights, <br>inspiration, and good vibes
-                        only.
-                    </p>
-                    <img src="https://assets.website-files.com/6205ecdcec584c56193d6121/6246217a2a1efb208cb41ffa_badge-fueled_news.svg"
-                        alt="">
-                    <input type="text" placeholder="Email">
-                    <button>Subscribe</button>
-                </div>
-                <div id="rightP">
-                    <div id="b1" class="bb">
-                        <div class="tileShow"></div>
-                        <h1>Work</h1>
-                    </div>
-                    <div id="b2" class="bb">
-                        <div class="tileShow"></div>
-                        <h1>About</h1>
-
-                    </div>
-                    <div id="b3" class="bb">
-                        <div class="tileShow"></div>
-                        <h1>Services</h1>
-
-                    </div>
-                    <div id="b4" class="bb">
-                        <div class="tileShow"></div>
-                        <h1>Verticles</h1>
-
-                    </div>
-                    <div id="b5" class="bb">
-                        <div class="tileShow"></div>
-                        <h1>Carrers</h1>
-
-                    </div>
-                    <div id="b6" class="bb">
-                        <div class="tileShow"></div>
-                        <h1>Ideas</h1>
-                    </div>
-                    <div id="b7" class="bb">
-                        <div class="tileShow"></div>
-                        <h1>News</h1>
-                    </div>
-                    <div id="b8" class="bb">
-                        <div class="tileShow"></div>
-                        <h1>Contact</h1>
-
-                    </div>
-                    <div id="b9">
-                        <div>
-                            <div class="sHandels">
-                                <div class="sHTile"></div>
-                                <i class="ri-twitter-fill"></i>
-                            </div>
-                            <div class="sHandels">
-                                <div class="sHTile"></div>
-                                <i class="ri-linkedin-fill"></i>
-                            </div>
-                            <div class="sHandels">
-                                <div class="sHTile"></div>
-                                <i class="ri-youtube-fill"></i>
-                            </div>
-                            <div class="sHandels">
-                                <div class="sHTile"></div>
-                                <i class="ri-instagram-fill"></i>
-                            </div>
-                        </div>
-                        <h4>Made with <i class="ri-heart-3-fill"></i> at Sheryians Coding School</h4>
-                    </div>
-                </div>
-            </div>
+            <h1 class="anim midLas mainHeadAnim">that</h1>
+          </div>
+          <div id="mainHLCtn">
+            <h1 id="mainHL" class="anim mainHeadAnim">Win by Design</h1>
+            <h1 id="sup1" class="anim mainHeadAnim">TM</h1>
+          </div>
         </div>
+        <h2 id="sideH">
+          CHECK OUT THE HYPE <i class="ri-arrow-down-line"></i>
+        </h2>
+      </div>
+      <!-- main-section -->
+      <div id="mainSec">
+        <!-- video-section-1 -->
+        <div id="videoSec-1">
+          <div id="movingCir1">Play</div>
+          <video src="Assets/Videos/clip_1.mp4" autoplay muted loop></video>
+        </div>
+        <!-- section-1 -->
+        <div id="sec-1">
+          <h1 class="anim">RocketAir is a design and strategy</h1>
+          <h1 class="anim">company with an adaptive approach</h1>
+          <h1 class="anim">to problem solving.</h1>
+        </div>
+        <!-- section-2 -->
+        <div id="sec-2">
+          <div id="tmiddle">
+            <h1 class="anim">We call it</h1>
+            <div id="tSLine"></div>
+          </div>
+          <h1 id="orbital" class="anim">ORBITAL</h1>
+          <div id="bH">
+            <h1 id="orbital2" class="anim">DESIGN</h1>
+            <button>Get to know us</button>
+          </div>
+        </div>
+        <!-- video-section-2 -->
+        <div class="videoSec-2">
+          <video src="Assets/Videos/clip_2.mp4" autoplay loop muted></video>
+        </div>
+        <!-- section-3 -->
+        <div id="sec-3">
+          <div class="slide sld" data-index="0">
+            <div class="tile"></div>
+            <div class="content">
+              <h3>Brand</h3>
+              <div class="arrow">
+                <i class="ri-arrow-right-up-line darrow"></i>
+                <i class="ri-arrow-right-line rarrow"></i>
+              </div>
+            </div>
+          </div>
+          <div class="slide sld" data-index="1">
+            <div class="tile"></div>
+            <div class="content">
+              <h3>Brand</h3>
+              <div class="arrow">
+                <i class="ri-arrow-right-up-line darrow"></i>
+                <i class="ri-arrow-right-line rarrow"></i>
+              </div>
+            </div>
+          </div>
+          <div class="slide sld" data-index="2">
+            <div class="tile"></div>
+            <div class="content">
+              <h3>Brand</h3>
+              <div class="arrow">
+                <i class="ri-arrow-right-up-line darrow"></i>
+                <i class="ri-arrow-right-line rarrow"></i>
+              </div>
+            </div>
+          </div>
+          <div class="slide" id="slide-4">
+            <div id="CircularCtn">
+              <img src="Assets/Images/circular_text.png" alt="" />
+              <div id="dot"></div>
+            </div>
+            <div id="opener0" class="videoOpener">
+              <video src="Assets/Videos/clip_3.mp4" autoplay muted loop></video>
+            </div>
+            <div id="opener1" class="videoOpener">
+              <video src="Assets/Videos/clip_4.mp4" autoplay muted loop></video>
+            </div>
+            <div id="opener2" class="videoOpener">
+              <video src="Assets/Videos/clip_5.mp4" autoplay muted loop></video>
+            </div>
+          </div>
+        </div>
+        <!-- section-4 -->
+        <div id="sec-4">
+          <div>
+            <h1 class="anim">We partner with</h1>
+            <h1 class="anim">forward-thinking</h1>
+            <h1 class="anim">enterprises and startups.</h1>
+          </div>
+
+          <div id="slider">
+            <div id="movingRing"></div>
+            <div class="slides">
+              <div>
+                <img src="Assets/Images/partner_1.png" alt="" />
+              </div>
+              <p>
+                Helping a fintech leader redefine banking. We designed BlockFi
+                web and mobile app, which lets users manage their crypto wallet,
+                trade crypto, and borrow money against their holdings.
+              </p>
+            </div>
+            <div class="slides">
+              <div>
+                <img src="Assets/Images/partner_2.png" alt="" />
+              </div>
+              <p>
+                Understanding what learners want. Using insights from user
+                interviews, we helped the edtech startup Coursera evolve the UX
+                of their MasterTrack® Certificate product to drive enrollment.
+              </p>
+            </div>
+            <div class="slides">
+              <div>
+                <img src="Assets/Images/partner_3.jpg" alt="" id="partner_3" />
+              </div>
+              <p>
+                A trusted design partner for the premier VC in fintech. With
+                strategy-led, systematic design, we help QED’s portfolio
+                companies bring new brands and products to market.
+              </p>
+            </div>
+            <div class="slides">
+              <div>
+                <img src="Assets/Images/partner_4.png" alt="" />
+              </div>
+              <p>
+                Bridging the gap for the connected enterprise. Using abstract 3D
+                models, we created unique animation to show how Software AG
+                helps businesses reach their digitally transformed future.
+              </p>
+            </div>
+            <div class="slides">
+              <div>
+                <img src="Assets/Images/partner_5.png" alt="" />
+              </div>
+              <p>
+                Data-driven product design for one of the world's largest
+                retailers. With usability testing, rapid prototyping, and
+                cutting-edge UX tactics, we reshaped Walmart's e-commerce
+                experience.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- section-5 -->
+        <div id="sec-5">
+          <h1 class="anim">WORK</h1>
+          <div id="box1" class="box">
+            <div id="movingCir2"></div>
+
+            <div class="sBox">
+              <img src="Assets/Images/sec _5_pic_1.jpg" alt="" />
+            </div>
+            <h4>Olive</h4>
+            <p>MAKING ONLINE SHOPING A MORE SUSTAINABLE ENVIRONMENT</p>
+          </div>
+          <div id="box2" class="box">
+            <div class="movingCir2"></div>
+
+            <div class="sBox">
+              <img src="Assets/Images/sec _5_pic_2.jpg" alt="" />
+            </div>
+            <h4>Stryx</h4>
+            <p>MAKING ONLINE SHOPING A MORE SUSTAINABLE ENVIRONMENT</p>
+          </div>
+          <div id="box3" class="box">
+            <div class="movingCir2"></div>
+
+            <div class="sBox">
+              <img src="Assets/Images/sec _5_pic_3.jpg" alt="" />
+            </div>
+            <h4>Focus Vision</h4>
+            <p>MAKING ONLINE SHOPING A MORE SUSTAINABLE ENVIRONMENT</p>
+          </div>
+        </div>
+        <!-- section-6 -->
+        <div id="sec-6">
+          <div id="epmainH">
+            <h1 class="anim">Take a look</h1>
+            <div id="epmainHMidH">
+              <h1 class="anim">at what</h1>
+              <div id="epsLine"></div>
+              <h1 class="anim">we can</h1>
+            </div>
+            <div id="epmainHB">
+              <h1 id="epmainHL" class="anim">do for you</h1>
+            </div>
+          </div>
+
+          <div id="epCircle">All Work</div>
+        </div>
+        <!-- section-7 -->
+        <div id="sec-7">
+          <div id="leftP">
+            <h1>Fuel for thought</h1>
+            <p>
+              A casual hello from the RocketAir Crew filled with insights,
+              <br />inspiration, and good vibes only.
+            </p>
+            <img
+              src="https://assets.website-files.com/6205ecdcec584c56193d6121/6246217a2a1efb208cb41ffa_badge-fueled_news.svg"
+              alt=""
+            />
+            <input type="text" placeholder="Email" />
+            <button>Subscribe</button>
+          </div>
+          <div id="rightP">
+            <div id="b1" class="bb">
+              <div class="tileShow"></div>
+              <h1>Work</h1>
+            </div>
+            <div id="b2" class="bb">
+              <div class="tileShow"></div>
+              <h1>About</h1>
+            </div>
+            <div id="b3" class="bb">
+              <div class="tileShow"></div>
+              <h1>Services</h1>
+            </div>
+            <div id="b4" class="bb">
+              <div class="tileShow"></div>
+              <h1>Verticles</h1>
+            </div>
+            <div id="b5" class="bb">
+              <div class="tileShow"></div>
+              <h1>Carrers</h1>
+            </div>
+            <div id="b6" class="bb">
+              <div class="tileShow"></div>
+              <h1>Ideas</h1>
+            </div>
+            <div id="b7" class="bb">
+              <div class="tileShow"></div>
+              <h1>News</h1>
+            </div>
+            <div id="b8" class="bb">
+              <div class="tileShow"></div>
+              <h1>Contact</h1>
+            </div>
+            <div id="b9">
+              <div>
+                <div class="sHandels">
+                  <div class="sHTile"></div>
+                  <i class="ri-twitter-fill"></i>
+                </div>
+                <div class="sHandels">
+                  <div class="sHTile"></div>
+                  <i class="ri-linkedin-fill"></i>
+                </div>
+                <div class="sHandels">
+                  <div class="sHTile"></div>
+                  <i class="ri-youtube-fill"></i>
+                </div>
+                <div class="sHandels">
+                  <div class="sHTile"></div>
+                  <i class="ri-instagram-fill"></i>
+                </div>
+              </div>
+              <h4>
+                Made with <i class="ri-heart-3-fill"></i> at Sheryians Coding
+                School
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"
-        integrity="sha512-GQ5/eIhs41UXpG6fGo4xQBpwSEj9RrBvMuKyE2h/2vw3a9x85T1Bt0JglOUVJJLeyIUl/S/kCdDXlE/n7zCjIg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"
-        integrity="sha512-6BvDODEWgjWWyBrg6YFio6xmzgKWpf54tDlnCtG05m++/jgh/7jQcx6jUJrq44lB84cf68FzYiT0LipabA5g8g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"
+      integrity="sha512-GQ5/eIhs41UXpG6fGo4xQBpwSEj9RrBvMuKyE2h/2vw3a9x85T1Bt0JglOUVJJLeyIUl/S/kCdDXlE/n7zCjIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"
+      integrity="sha512-6BvDODEWgjWWyBrg6YFio6xmzgKWpf54tDlnCtG05m++/jgh/7jQcx6jUJrq44lB84cf68FzYiT0LipabA5g8g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"
@@ -326,6 +357,5 @@
         integrity="sha512-0bHMhYsdpiur1bT84kDH4D7cpxFQ9O7uA5yxVAqWC87h552Xt0swX4M+ZlXMKE8oPVRIJ5lAwXWO2UWeDwJJOw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
